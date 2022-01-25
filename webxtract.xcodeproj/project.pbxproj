@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E95B8C8027A0B967002442E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B8C7F27A0B967002442E3 /* main.swift */; };
+		E95B8C8827A0BBA7002442E3 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E95B8C8727A0BBA7002442E3 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95B8C8827A0BBA7002442E3 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,9 @@
 			dependencies = (
 			);
 			name = webxtract;
+			packageProductDependencies = (
+				E95B8C8727A0BBA7002442E3 /* ArgumentParser */,
+			);
 			productName = webxtract;
 			productReference = E95B8C7C27A0B967002442E3 /* webxtract */;
 			productType = "com.apple.product-type.tool";
@@ -107,6 +112,9 @@
 				Base,
 			);
 			mainGroup = E95B8C7327A0B967002442E3;
+			packageReferences = (
+				E95B8C8627A0BBA7002442E3 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = E95B8C7D27A0B967002442E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +291,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E95B8C8627A0BBA7002442E3 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E95B8C8727A0BBA7002442E3 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E95B8C8627A0BBA7002442E3 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E95B8C7427A0B967002442E3 /* Project object */;
 }
