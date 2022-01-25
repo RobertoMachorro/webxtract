@@ -45,6 +45,7 @@
 				E95B8C7D27A0B967002442E3 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		E95B8C7D27A0B967002442E3 /* Products */ = {
 			isa = PBXGroup;
