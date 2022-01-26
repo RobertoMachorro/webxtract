@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E95B8C8027A0B967002442E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B8C7F27A0B967002442E3 /* main.swift */; };
 		E95B8C8827A0BBA7002442E3 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E95B8C8727A0BBA7002442E3 /* ArgumentParser */; };
+		E9E05FF127A0EAE400CCDA89 /* webxtract_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E05FF027A0EAE400CCDA89 /* webxtract_tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		E95B8C7C27A0B967002442E3 /* webxtract */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = webxtract; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95B8C7F27A0B967002442E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E9E05FEE27A0EAE400CCDA89 /* webxtract tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "webxtract tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E05FF027A0EAE400CCDA89 /* webxtract_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webxtract_tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9E05FEB27A0EAE400CCDA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				E95B8C7E27A0B967002442E3 /* webxtract */,
+				E9E05FEF27A0EAE400CCDA89 /* webxtract tests */,
 				E95B8C7D27A0B967002442E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				E95B8C7C27A0B967002442E3 /* webxtract */,
+				E9E05FEE27A0EAE400CCDA89 /* webxtract tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +75,14 @@
 				E95B8C7F27A0B967002442E3 /* main.swift */,
 			);
 			path = webxtract;
+			sourceTree = "<group>";
+		};
+		E9E05FEF27A0EAE400CCDA89 /* webxtract tests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E05FF027A0EAE400CCDA89 /* webxtract_tests.swift */,
+			);
+			path = "webxtract tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +108,23 @@
 			productReference = E95B8C7C27A0B967002442E3 /* webxtract */;
 			productType = "com.apple.product-type.tool";
 		};
+		E9E05FED27A0EAE400CCDA89 /* webxtract tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E05FF227A0EAE400CCDA89 /* Build configuration list for PBXNativeTarget "webxtract tests" */;
+			buildPhases = (
+				E9E05FEA27A0EAE400CCDA89 /* Sources */,
+				E9E05FEB27A0EAE400CCDA89 /* Frameworks */,
+				E9E05FEC27A0EAE400CCDA89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "webxtract tests";
+			productName = "webxtract tests";
+			productReference = E9E05FEE27A0EAE400CCDA89 /* webxtract tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +136,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					E95B8C7B27A0B967002442E3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E9E05FED27A0EAE400CCDA89 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -120,9 +160,20 @@
 			projectRoot = "";
 			targets = (
 				E95B8C7B27A0B967002442E3 /* webxtract */,
+				E9E05FED27A0EAE400CCDA89 /* webxtract tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9E05FEC27A0EAE400CCDA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E95B8C7827A0B967002442E3 /* Sources */ = {
@@ -130,6 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95B8C8027A0B967002442E3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E05FEA27A0EAE400CCDA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E05FF127A0EAE400CCDA89 /* webxtract_tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +328,34 @@
 			};
 			name = Release;
 		};
+		E9E05FF327A0EAE400CCDA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.machorro.webxtract-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9E05FF427A0EAE400CCDA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.machorro.webxtract-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -286,6 +373,15 @@
 			buildConfigurations = (
 				E95B8C8427A0B967002442E3 /* Debug */,
 				E95B8C8527A0B967002442E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E05FF227A0EAE400CCDA89 /* Build configuration list for PBXNativeTarget "webxtract tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E05FF327A0EAE400CCDA89 /* Debug */,
+				E9E05FF427A0EAE400CCDA89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
